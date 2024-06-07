@@ -1,5 +1,7 @@
 pipeline {
-    agent any
+    agent {
+        label "${237-master}"
+    }
     environment {
         CI = 'true'
     }
