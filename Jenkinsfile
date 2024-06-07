@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                kubectl get nodes
+                'kubectl get nodes'
             }
         }
         stage('Test') {
             steps {
-                kubectl get nodes
+                'kubectl get nodes'
             }
         }
     }
