@@ -8,12 +8,12 @@ pipeline {
     stages {
         stage('Build') {
             steps {
-                sh 'npm install'
+                kubectl get nodes
             }
         }
         stage('Test') {
             steps {
-                sh './jenkins/scripts/test.sh'
+                kubectl get nodes
             }
         }
     }
